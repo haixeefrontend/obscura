@@ -1,15 +1,15 @@
-# unplugin-starter
+# obscura
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Unit Test][unit-test-src]][unit-test-href]
 
-Starter template for [unplugin](https://github.com/unjs/unplugin).
+A common hooks library for Vue / UniApp developments | Vue + UniApp 多端支持的 hooks 函数库
 
-## Installation
+## Installation 安装
 
 ```bash
-npm i -D unplugin-starter
+npm i -D obscura
 ```
 
 <details>
