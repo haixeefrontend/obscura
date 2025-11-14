@@ -72,10 +72,15 @@
     "release": "bumpp && unotp yarn publish",
     "prepublishOnly": "yarn run build"
   },
+  "peerDependencies": {
+    "@dcloudio/uni-app": "3.0.0-4070620250821001",
+    "vue": "^3.4.21"
+  },
   "dependencies": {
     "unplugin": "^2.3.10"
   },
   "devDependencies": {
+    "@dcloudio/uni-app": "3.0.0-4070620250821001",
     "@sxzz/eslint-config": "^7.2.10",
     "@sxzz/prettier-config": "^2.2.4",
     "@sxzz/test-utils": "^0.5.12",
@@ -86,7 +91,8 @@
     "prettier": "^3.6.2",
     "tsdown": "^0.16.4",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.8"
+    "vitest": "^4.0.8",
+    "vue": "^3.4.21"
   },
   "engines": {
     "node": ">=20.19.0"
