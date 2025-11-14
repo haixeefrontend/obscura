@@ -1,0 +1,95 @@
+{
+  "name": "obscura",
+  "version": "0.0.0",
+  "packageManager": "yarn@4.5.1",
+  "description": "A common hooks library for Vue / UniApp developments",
+  "type": "module",
+  "keywords": [
+    "vue",
+    "uniapp",
+    "element-plus",
+    "hooks",
+    "unplugin",
+    "vite",
+    "webpack",
+    "rspack",
+    "rollup",
+    "rolldown",
+    "esbuild",
+    "farm"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/haixeefrontend/obscura#readme",
+  "bugs": {
+    "url": "https://github.com/haixeefrontend/obscura/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haixeefrontend/obscura.git"
+  },
+  "author": {
+    "name": "Maiko Tan",
+    "email": "maiko.tan.coding@gmail.com"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./api": "./dist/api.mjs",
+    "./esbuild": "./dist/esbuild.mjs",
+    "./farm": "./dist/farm.mjs",
+    "./rolldown": "./dist/rolldown.mjs",
+    "./rollup": "./dist/rollup.mjs",
+    "./rspack": "./dist/rspack.mjs",
+    "./uni": "./dist/uni.mjs",
+    "./vite": "./dist/vite.mjs",
+    "./vue": "./dist/vue.mjs",
+    "./webpack": "./dist/webpack.mjs",
+    "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint --cache .",
+    "lint:fix": "yarn run lint --fix",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && unotp yarn publish",
+    "prepublishOnly": "yarn run build"
+  },
+  "dependencies": {
+    "unplugin": "^2.3.10"
+  },
+  "devDependencies": {
+    "@sxzz/eslint-config": "^7.2.10",
+    "@sxzz/prettier-config": "^2.2.4",
+    "@sxzz/test-utils": "^0.5.12",
+    "@types/node": "^22.19.0",
+    "bumpp": "^10.3.1",
+    "eslint": "^9.39.1",
+    "obscura": "link:.",
+    "prettier": "^3.6.2",
+    "tsdown": "^0.16.4",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.8"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "prettier": "@sxzz/prettier-config"
+}

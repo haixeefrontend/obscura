@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`rollup > use-any.js 1`] = `
+"// use-any.js
+import * as vue from 'obscura/vue';
+export { vue as obscura };
+"
+`;
+
+exports[`rollup > use-uni.js 1`] = `
+"// use-uni.js
+import * as uni from 'obscura/uni';
+export { uni as obscura };
+"
+`;
+
+exports[`rollup > use-vue.js 1`] = `
+"// use-vue.js
+import * as vue from 'obscura/vue';
+export { vue as obscura };
+"
+`;
